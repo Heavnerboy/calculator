@@ -1,2 +1,2 @@
 # calculator
-Designer Calculator
+Designer Calculator designed by Jakob Springmann
