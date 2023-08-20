@@ -33,21 +33,21 @@ input[type="text"] {
     flex-direction: column;
     padding: 0 0 20px 0;
 }
-.row {
+.column {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    padding: 10px;
+    padding: 1
 }
 
-.row:last-child {
+.column:last-child {
     width: 70%;
     justify-content: space-between;
-    margin-top: -120px;
 }
 
 
 input[value="="] {
-    height: 190px!important;
+    height: calc(50% - 40px)!important;
     border-radius: 50px 50px 50px 50px!important;
     background-color: #005eff!important;
     color: #fff!important;
@@ -61,6 +61,7 @@ input[value="="]:hover {
 
 input[type="button"] {
     width: calc(25% - 10px);
+    margin: 8px;
     background-color: #272727;
     border-radius: 50%;
     border: solid 0.1px #414141;
@@ -69,7 +70,6 @@ input[type="button"] {
     height: 80px;
     color: #fff;
     font-size: 40px;
-    font-weight: 500;
 }
 
 input[type="button"]:hover {
@@ -83,6 +83,7 @@ input[type="button"]:hover {
 }
 
 #keyboard {
+    display: flex;
     background-color: #161616;
     padding: 10px;
     border-radius: 10px;
@@ -91,8 +92,4 @@ input[type="button"]:hover {
 #result {
     padding: 0 20px 0 20px;
     text-align: end;
-}
-
-#is {
-    margin-bottom: 15px;
 }
