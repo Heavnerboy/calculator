@@ -12,35 +12,34 @@
             <input type="text" id="result" readonly>
         </div>
         <div id="keyboard">
-        <div class="row">
+        <div class="column">
             <input type="button" class="green" value="C" onclick="clearResult()">
-            <input type="button" class="green" value="÷" onclick="appendToResult('/')">
-            <input type="button" class="green" value="x" onclick="appendToResult('*')">
-            <input type="button" class="green" value="⌫" onclick="backspace()">
-        </div>
-        <div class="row">
             <input type="button" value="7" onclick="appendToResult('7')">
-            <input type="button" value="8" onclick="appendToResult('8')">
-            <input type="button" value="9" onclick="appendToResult('9')">
-            <input type="button" class="green" value="-" onclick="appendToResult('-')">
-        </div>
-        <div class="row">
             <input type="button" value="4" onclick="appendToResult('4')">
-            <input type="button" value="5" onclick="appendToResult('5')">
-            <input type="button" value="6" onclick="appendToResult('6')">
-            <input type="button" class="green" value="+" onclick="appendToResult('+')">
-        </div>
-        <div class="row">
             <input type="button" value="1" onclick="appendToResult('1')">
-            <input type="button" value="2" onclick="appendToResult('2')">
-            <input type="button" value="3" onclick="appendToResult('3')">
-            <input type="button" id="is" value="=" onclick="calculate()">
-        </div>
-        <div class="row" id="lastrow">
             <input type="button" value="%" onclick="appendToResult('%')">
-            <input type="button" value="0" onclick="appendToResult('0')">
-            <input type="button" value="," onclick="appendToResult('.')">
         </div>
+        <div class="column">
+            <input type="button" class="green" value="÷" onclick="appendToResult('/')">
+            <input type="button" value="8" onclick="appendToResult('8')">
+            <input type="button" value="5" onclick="appendToResult('5')">
+            <input type="button" value="2" onclick="appendToResult('2')">
+            <input type="button" value="0" onclick="appendToResult('0')">
+
+        </div>
+        <div class="column">
+            <input type="button" class="green" value="x" onclick="appendToResult('*')">
+            <input type="button" value="9" onclick="appendToResult('9')">
+            <input type="button" value="6" onclick="appendToResult('6')">
+            <input type="button" value="3" onclick="appendToResult('3')">
+            <input type="button" value="," onclick="appendToResult('.')">
+
+        </div>
+        <div class="column">
+            <input type="button" class="green" value="⌫" onclick="backspace()">
+            <input type="button" class="green" value="-" onclick="appendToResult('-')">
+            <input type="button" class="green" value="+" onclick="appendToResult('+')">
+            <input type="button" id="is" value="=" onclick="calculate()">
         </div>
     </div>
 
